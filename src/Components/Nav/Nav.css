@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    height: 8vh;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    padding: 0 10px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color:green;
+    }
+}
