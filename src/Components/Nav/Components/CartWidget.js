@@ -1,11 +1,13 @@
 import React from "react";
 import './CartWidget.css';
+import { Link } from "react-router-dom";
 
-const CartWidget = () =>{
+const CartWidget = ({cantidad}) =>{
+    
     return (
         <div className="cart_widget d-flex align-items-center position-relative">
-            <i className="fa-solid fa-cart-shopping fa-xl text-white px-5"></i>
-            <p className="notificacion">{0}</p>
+            <Link to="/cart"><i className="fa-solid fa-cart-shopping fa-xl px-5"></i></Link>
+            <p className="notificacion">{cantidad}</p>
         </div>
     )
 }

@@ -1,0 +1,60 @@
+.CartList{
+    width: 80vw;
+    background-color: silver;
+    height: auto;
+    display: flex;
+    margin: 10vh auto;
+    border-radius: 10px;
+    flex-direction:column;
+    filter: drop-shadow(1px);
+}
+.CartItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 40vh;
+    margin: 50px auto ;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px white;
+}
+.card-img-top{
+    height: 25vh;
+    width: 12.5vw;
+    background-color: transparent;
+}
+.card-body{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+    width: 50vw;
+}
+.cartBtnEliminar{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 5vw;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    margin: 5rem;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.cartBtnComprar{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: auto;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: white;
+    margin: 5rem;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}

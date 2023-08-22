@@ -1,14 +1,21 @@
 .nav{
     display: flex;
     height: 8vh;
-    background-color: rgb(31, 30, 30);
-    color: white;
-    padding: 0 10px;
+    background-color:white ;
+    color: rgb(31, 30, 30);
+    padding: 0 ;
+}
+h1{
+    color:rgb(31, 30, 30) ;
+    font-family: 'Playfair Display', serif;
 }
 .nav-link{
+    font-size: 1.25rem;
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
-    color: white;
-    &:hover{
-        color:green;
-    }
+    color: rgb(31, 30, 30);
+    &:hover,&:focus{
+        color:rgb(224, 178, 60);
+    };
+    
 }

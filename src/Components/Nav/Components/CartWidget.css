@@ -1,14 +1,16 @@
 .cart_widget{
     .fa-cart-shopping{
         width: 1vw;
+        color: rgb(31, 30, 30);
     }
     .notificacion{
         display: flex;
+        color:white;
         background-color: red;
         position:absolute;
         border-radius: 100%;
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
         font-size: small;
         justify-content:center;
         align-items: center;
