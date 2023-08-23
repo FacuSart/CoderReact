@@ -30,6 +30,7 @@ const Cart =({cartList,setCartList})=>{
                         <p className="card-description">{prod.description}</p>
                     </div>
                         <button className="cartBtnEliminar">Eliminar</button>
+                        <p className="fw-bold fs-4 m-0">Precio: ${prod.price}</p>
                 </div>
             </>
         ))}

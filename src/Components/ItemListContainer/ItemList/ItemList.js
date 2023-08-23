@@ -42,12 +42,13 @@ const ItemList = ({cartList, setCartList, cantidad , setCantidad}) => {
             {productsList.map((producto) => (
             <div className='CardList'>
             
-                <div className="card" key={producto.id}>
+                <div className="card p-3" key={producto.id}>
                     <img className="card-img" src={producto.image} alt="Card"/>
                     <div className="card-body">
                     <Link className="d-flex text-decoration-none text-dark" to={`/item/${producto.id}`}><h5 className="card-title">{producto.title}</h5></Link>
                         <p className="card-description">{producto.description}</p>
                     </div>
+                    <p className="fw-bold fs-4 m-0">Precio: ${producto.price}</p>
                 </div>
             <AddButton onClick={()=>addCart(producto)}/>
             </div>

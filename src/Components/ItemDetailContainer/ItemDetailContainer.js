@@ -37,6 +37,7 @@ const ItemDetailContainer = ({cartList, setCartList , cantidad , setCantidad}) =
                         <h5 className="card-title">{producto.title}</h5>
                         <p className="card-description">{producto.description}</p>
                     </div>
+                    <p className="fw-bold fs-4 m-0">Precio: ${producto.price}</p>
                 </div>
                 <AddButton onClick={() => addCart(producto)} />
             </section>
