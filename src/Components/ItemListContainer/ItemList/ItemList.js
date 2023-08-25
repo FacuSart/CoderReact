@@ -6,10 +6,12 @@ import Electronica from "../../../Routes/Electronica";
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import AddButton from '../../Buttons/AddButton';
+import { useCart } from '../../../Contexts/CartContext';
 
-const ItemList = ({cartList, setCartList, cantidad , setCantidad}) => {
-    const {id} = useParams()
+const ItemList = () => {
+    const {id} = useParams();
     const [productsList, setproductsList] = useState([]);
+    const {cartList, setCartList, setCantidad} = useCart();
     
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/`)
@@ -26,16 +28,15 @@ const ItemList = ({cartList, setCartList, cantidad , setCantidad}) => {
     }
     
     if(id === "1"){
-        return(<Indumentaria cartList={cartList} setCartList={setCartList} cantidad={cantidad} setCantidad={setCantidad}/>)
+        return(<Indumentaria/>)
     }else
     if(id === "2"){
-        return(<Joyeria cartList={cartList} setCartList={setCartList} cantidad={cantidad} setCantidad={setCantidad}/>)
+        return(<Joyeria/>)
     }else
     if(id === "3"){
-        return(<Electronica cartList={cartList} setCartList={setCartList} cantidad={cantidad} setCantidad={setCantidad}/>)
+        return(<Electronica/>)
     }
 
-    
     
     return (
         <section className="itemList">
@@ -48,7 +49,7 @@ const ItemList = ({cartList, setCartList, cantidad , setCantidad}) => {
                     <Link className="d-flex text-decoration-none text-dark" to={`/item/${producto.id}`}><h5 className="card-title">{producto.title}</h5></Link>
                         <p className="card-description">{producto.description}</p>
                     </div>
-                    <p className="fw-bold fs-4 m-0">Precio: ${producto.price}</p>
+                    <p className="fw-bold fs-4 m-0">${producto.price}</p>
                 </div>
             <AddButton onClick={()=>addCart(producto)}/>
             </div>

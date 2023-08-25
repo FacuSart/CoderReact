@@ -11,7 +11,7 @@ const DropdownList = () => {
     }
 
     return (
-        <li class="nav-item mx-3">
+        <li className="nav-item mx-3">
             <Dropdown isOpen={dropdown} toggle={dropdownHandler} className="position-relative">
                 <DropdownToggle className="dropdownToggle bg-transparent border-0 nav-link">Categorias</DropdownToggle>
                 <DropdownMenu className="dropdownMenu bg-dark">

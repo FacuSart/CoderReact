@@ -4,10 +4,12 @@ import BackButton from "../Buttons/BackButton";
 import AddButton from "../Buttons/AddButton";
 import './ItemDetailContainer.css'
 
+
 const ItemDetailContainer = ({cartList, setCartList , cantidad , setCantidad}) => {
     const { id } = useParams()
 
     const [producto, setProducto] = useState([]);
+
 
     useEffect(()=>{
         setCantidad(localStorage.getItem('cantidad'))
