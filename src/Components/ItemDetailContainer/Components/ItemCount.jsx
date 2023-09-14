@@ -20,7 +20,7 @@ const ItemCount =(props)=>{
 
     useEffect(()=>{
         sendDataToParent(cantidadItemCount)
-    },[cantidadItemCount])
+    })
    
 
     return (
