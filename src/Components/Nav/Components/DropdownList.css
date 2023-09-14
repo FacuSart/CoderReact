@@ -2,23 +2,24 @@
     background-color: transparent;
     font-weight: bold;
     border: none;
-    position: relative;
-    &:focus{
-        color: rgb(224, 178, 60);
-    };
     
 }
 .dropdownMenu{
-    position: absolute;
     text-align: center;
-    right: 100px;
     background-color: rgb(49, 48, 48);
 }
 
 .dropdownItem{
-    color:rgb(224, 178, 60);
+    color:white;
     text-decoration: none;
     &:hover{
         color: rgb(224, 178, 60);
     };
+}
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .dropdownToggle{
+        margin: 20px 0;
+    }
+    
 }

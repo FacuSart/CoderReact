@@ -1,0 +1,21 @@
+.item-count{
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btn-item-count{
+    width: 3rem;
+    margin: 0 2rem;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 10px;
+    &:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+}

@@ -6,7 +6,7 @@ const BackButton = () => {
     };
 
     return (
-        <button className="backBtn" onClick={goBack}>Volver</button>
+        <button className="backBtn" onClick={goBack}>Atrás</button>
     );
 };
 export default BackButton

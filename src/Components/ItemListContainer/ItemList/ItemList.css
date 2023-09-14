@@ -4,7 +4,6 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 50px;
-    
 }
 .card{
     display: flex;
@@ -19,12 +18,12 @@
     width: 100%;
 }
 .card-body{
+    padding: 0px;
     max-width:18vw;
     text-decoration: none;
     display: flex;
     margin: auto;
     align-items: center;
-    padding-right: 0px;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
@@ -34,24 +33,32 @@
     background-color: transparent;
 }
 .card-description{
-    height: 10vh;
+    height: auto;
+    width: auto;
 }
-.CardList{
+.card-product{
     display: flex;
     flex-direction: column;
 }
-.CardBtn{
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-radius: 50px;
-    color: rgba(39, 14, 2, 0.774);
-    background-color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    &:hover{
-        box-shadow: 0px 0px 10px;
-        color: white;
-        background-color: rgba(39, 14, 2, 0.774);
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .card{
+        display: flex;
+        align-items: center;
+        margin: 50px;
+        width: 70vw;
+        height: auto;
+        box-shadow: 0px 0px 5px 0px white;
+    }
+    .itemList{
+        padding: 0;
+    }
+    .card img{
+        height: 20vh;
+        width: auto;
+    }
+    .card-body{
+        max-width:none;
+        width: auto;
     }
 }

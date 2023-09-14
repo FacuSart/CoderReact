@@ -2,16 +2,23 @@
     display: flex;
     justify-content: center;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 10vw;
     margin: auto;
-    color: rgba(39, 14, 2, 0.774);
+    color: rgb(0, 0, 0);
     background-color: white;
     font-size: 1.25rem;
     font-weight: bold;
     &:hover{
         box-shadow: 0px 0px 10px;
         color: white;
-        background-color: rgba(39, 14, 2, 0.774);
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .add-button{
+        width: auto;
+        margin-bottom: 50px;
     }
 }
