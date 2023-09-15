@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import './Checkout.css'
+import BackButton from '../../Components/Buttons/BackButton';
 
 const Checkout = () => {
   const [form, setForm] = useState({
@@ -48,13 +49,18 @@ const Checkout = () => {
   
 
     addDoc(ordersCollection, formData).then((snapshot) => setId(snapshot.id));
+    
   };
-  
-
+  useEffect(()=>{
+    localStorage.setItem('LastId',id)
+  },[id])
   return (
     <div>
       {typeof id !== 'undefined' ? (
-        <h3 className='order-confirmed-h3'>Listo! <span className='d-block my-5'>El id de su orden es {id}</span> Muchas gracias por elegirnos!</h3>
+        <>
+          <BackButton/>
+          <h3 className='order-confirmed-h3'>Listo! <span className='d-block my-5'>El id de su orden es {id}</span> Muchas gracias por elegirnos!</h3>
+        </>
       ) : (
         <div className='form-container'>
             <h3 className='form-container-h3'>Complete los siguientes datos</h3>

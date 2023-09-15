@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap');
 .order-finder{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +87,10 @@
     margin: auto;
     height: auto;
 }
-
+.order-finder-h3{
+    position: absolute;
+    bottom: 0;
+}
 @media screen and (min-width: 0px) and (max-width: 992px) {
     .order-finder{
         flex-direction: column;

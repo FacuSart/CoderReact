@@ -40,8 +40,8 @@ const OrderFinder = () =>{
             onChange={(e) => setId(e.target.value)}
             />
             <button className="order-finder-btn" onClick={handleSearch}>Buscar</button>
+            <h3 className="order-finder-h3">Su ultimo Id: {localStorage.getItem("LastId")}</h3>
         </div>
-        
         {order.length !== 0 ?(
             <div className="search-result">
                 <h2 className="search-result-title py-4 justify-content-center fs-1">Resultado de la búsqueda</h2>

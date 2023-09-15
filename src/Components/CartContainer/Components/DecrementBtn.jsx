@@ -19,7 +19,7 @@ const DecrementBtn = (producto) =>{
         localStorage.setItem('cantidad', updatedCart.length);
     }
     return(
-        <button className="increment-decrement-btn" onClick={()=>decrement()}>-</button>
+        <button className="increment-decrement-btn" onClick={decrement}>-</button>
     )
 }
 
