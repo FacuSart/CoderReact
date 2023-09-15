@@ -12,7 +12,7 @@ Soy Facundo Sartori, tengo 22 años y actualmente vivo en la ciudad de Santa Fe,
 
 ### Dropdown Categorias
 
-![Dropdown](dropdown)
+![Dropdown](dropdown.png)
 
 ##  Detalle de producto
 
