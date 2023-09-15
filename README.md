@@ -4,7 +4,7 @@ Proyecto eCommerce de suplementos deportivos (Creatinas, Proteínas y Aminoácid
 
 ##  Sobre mí
 
-Soy Facundo Sartori, tengo 22 años y actualmente vivo en la ciudad de Santa Fe, Argentina. Empecé con el desarrollo web hace poco mas de un año y este es mi primer proyecto en React.
+Soy Facundo Sartori, tengo 22 años y actualmente vivo en la ciudad de Santa Fe, Argentina. Empecé con el desarrollo web Front-end hace poco mas de un año y este es mi primer proyecto en React.
 
 ##  Barra de navegación
 
@@ -34,5 +34,12 @@ Vacio:
 Resultado de la busqueda:
 ![Orderfinder Result](orderfinderResult.png)
 
+##  Lo aprendido
 
+- Components
+- Hooks
+- Context
+- Firebase
+- Routing
+- Events
 
