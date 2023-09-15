@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import './Checkout.css'
 import BackButton from '../../Components/Buttons/BackButton';
+import { useCart } from '../../Contexts/CartContext';
 
 const Checkout = () => {
+  const { cartList, setCartList, cantidad, setCantidad, total, setTotal} = useCart();
+
   const [form, setForm] = useState({
     Buyer: [{ nombre: '', email: '', celular: '' }],
     Items: [],
@@ -47,13 +50,20 @@ const Checkout = () => {
       Buyer: buyerData,
     };
   
-
     addDoc(ordersCollection, formData).then((snapshot) => setId(snapshot.id));
-    
+
+    setCartList([]);
+    setCantidad(0)
+    setTotal(0)
+    localStorage.setItem("carrito",cartList)
+    localStorage.setItem("cantidad", cantidad)
+    localStorage.setItem("total",total)
   };
+
   useEffect(()=>{
     localStorage.setItem('LastId',id)
-  },[id])
+  },[id]);
+
   return (
     <div>
       {typeof id !== 'undefined' ? (
